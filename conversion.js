@@ -11,8 +11,12 @@ function conversion() {
 
   switch(option){
     case 1:
-      
+
       C = Number(prompt('Digite a temperatura em Celsius'))
+
+      if(isNaN(C)){
+        alert('Temperatura inválida.')
+      }
 
       F = C * 9/5 + 32
 
@@ -23,6 +27,10 @@ function conversion() {
     case 2:
       
       F = Number(prompt('Digite a temperatura em Fahrenheits'))
+
+      if(isNaN(F)){
+        alert('Temperatura inválida.')
+      }
       
       C = (F - 32) * 5/9
       
@@ -32,7 +40,6 @@ function conversion() {
     break;
 
     default:
-      
       alert('Opção inválida.')
   } 
 }
