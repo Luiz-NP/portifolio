@@ -1,7 +1,5 @@
 .wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   height: 100vh;
   width: 100vw;
@@ -10,4 +8,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+.content {
+  margin-top: 20rem;
+  margin-left: 10%;
+}
+
+.title span {
+  font-size: 4.5rem;
+
+  width: min-content;
+  height: max-content;
+}
+
+.instructions {
+  margin-top: 3rem;
+  color: var(--primary-text-color);
+
+  font-size: 2rem;
 }
