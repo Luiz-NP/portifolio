@@ -15,5 +15,27 @@
 
 :root {
   background-color: #1B1B1B;
+  
   font-family: "joystix";
+  font-size: 62.5%;
+
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #FEB0DC;
+  --title-shadow-color: #5D0A9D;
+  --text-shadow-color: #402F5C;
+}
+
+.title-color {
+  background: -webkit-linear-gradient(var(--primary-text-color) 50%, var(--secondary-text-color) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 3px var(--title-shadow-color));
+}
+
+.text-border {
+  -webkit-text-stroke: 1px black;
+}
+
+.text-shadow {
+  -webkit-filter: drop-shadow(2px 2px var(--text-shadow-color));
 }
