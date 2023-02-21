@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import {Link} from "react-router-dom";
 import "./styles.css";
 
 // icons
@@ -16,7 +17,7 @@ export const Home = () => {
   const clickButtonAudioRef = useRef();
 
   return (
-    <div className="wrapper">
+    <div className="home-wrapper">
       <audio ref={themeAudioRef} src={themeAudio} loop />
       <audio ref={clickButtonAudioRef} src={clickButtonAudio} />
       <header>
@@ -29,12 +30,14 @@ export const Home = () => {
 
       <main>
       <img className="arrow" src={arrowIcon} alt="arrow"/>
-        <button onClick={() => {
-          clickButtonAudioRef.current.play();
-          // themeAudioRef.current.play();
-        }}>
-          <span className="double-color ">start</span>
-        </button>
+        <Link to="/loading">        
+          <button onClick={() => {
+            clickButtonAudioRef.current.play();
+            // themeAudioRef.current.play();
+          }}>
+            <span className="double-color ">start</span>
+          </button>
+        </Link>
       </main>
 
       <footer>
