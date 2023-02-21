@@ -1,0 +1,32 @@
+.loading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../../assets/images/loadingBackgroundImage.png");
+}
+
+.loading {
+  width: 30rem;
+}
+
+.loading p {
+  font-size: 2rem;
+}
+
+.points {
+  display: flex;
+  gap: .5rem;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.points span {
+  color: white;
+  font-size: large;
+}
