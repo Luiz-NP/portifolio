@@ -32,8 +32,8 @@ export const Home = () => {
       <img className="arrow" src={arrowIcon} alt="arrow"/>
         <Link to="/loading">        
           <button onClick={() => {
-            clickButtonAudioRef.current.play();
-            // themeAudioRef.current.play();
+            // clickButtonAudioRef.current.play();
+            themeAudioRef.current.play();
           }}>
             <span className="double-color ">start</span>
           </button>
