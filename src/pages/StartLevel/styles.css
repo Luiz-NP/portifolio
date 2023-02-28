@@ -1,0 +1,41 @@
+.start-level-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../../assets/images/loadingBackgroundImage.png");
+}
+
+.start-level-wrapper h1 {
+  font-size: 4rem;
+}
+
+.start-level-wrapper h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.start-level-wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 14rem;
+  height: 8rem;
+
+  border-radius: 20px;
+  border: none;
+
+  position: relative;
+
+  background: url("../../assets/images/buttonBackground.svg") no-repeat;
+  background-size: contain;
+
+  font-size: 2rem;
+  font-family: "joystix";
+}
