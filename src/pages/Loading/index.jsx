@@ -14,7 +14,7 @@ export const Loading = () => {
 
     setTimeout(() => {
       clearInterval(interval);
-      navigate("/", {replace: true});
+      navigate("/level/1", {replace: true});
     }, 2000)
   }, []);
 
