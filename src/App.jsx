@@ -1,8 +1,11 @@
+import { AudioProvider } from "./contexts/AudioContext";
 import { MainRoutes } from "./routes/MainRoutes";
 
 const App = () => {
   return (
-    <MainRoutes />
+    <AudioProvider>
+      <MainRoutes />
+    </AudioProvider>
   );
 };
 

@@ -59,26 +59,8 @@ main {
   }
 }
 
-main button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 14rem;
-  height: 8rem;
-
+main .start-button {
   margin-top: 7rem;
-
-  border-radius: 20px;
-  border: none;
-
-  position: relative;
-
-  background: url("../../assets/images/buttonBackground.svg") no-repeat;
-  background-size: contain;
-
-  font-size: 2rem;
-  font-family: "joystix";
 }
 
 footer {
@@ -109,4 +91,14 @@ footer strong {
 
 .social-medias img {
   filter: drop-shadow(0 7px 0 #402F5C);
+}
+
+@media (min-width: 500px) {
+  header .title {
+    font-size: 5rem;
+  }
+
+  header .indicative-text {
+    font-size: 2rem;
+  }
 }

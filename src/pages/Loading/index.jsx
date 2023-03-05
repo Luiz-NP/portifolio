@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 export const Loading = () => {
-  const [loadingPoints, setLoadingPoints] = useState(['.']);
-
   const navigate = useNavigate();
+
+  const [loadingPoints, setLoadingPoints] = useState(['.']);
 
   useEffect(() => {
     const interval = setInterval(() => {

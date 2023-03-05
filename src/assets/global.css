@@ -29,3 +29,23 @@
 button {
   cursor: pointer;
 }
+
+.start-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 14rem;
+  height: 8rem;
+
+  border-radius: 20px;
+  border: none;
+
+  position: relative;
+
+  background: url("./images/buttonBackground.svg") no-repeat;
+  background-size: contain;
+
+  font-size: 2rem;
+  font-family: "joystix";
+}
