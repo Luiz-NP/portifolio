@@ -9,17 +9,17 @@ import linkedinIcon from "../../assets/images/socialMedias/linkedin.svg";
 import arrowIcon from "../../assets/images/arrow.svg";
 
 // audio
-import themeAudio from "../../assets/audios/zelda.mp3"
-import clickButtonAudio from "../../assets/audios/marioCoin.mp3";
+import themeAudio from "../../assets/audios/zelda.mp3";
+// import clickButtonAudio from "../../assets/audios/marioCoin.mp3";
 
 export const Home = () => {
   const themeAudioRef = useRef();
-  const clickButtonAudioRef = useRef();
+  // const clickButtonAudioRef = useRef();
 
   return (
     <div className="home-wrapper">
       <audio ref={themeAudioRef} src={themeAudio} loop />
-      <audio ref={clickButtonAudioRef} src={clickButtonAudio} />
+      {/* <audio ref={clickButtonAudioRef} src={clickButtonAudio} /> */}
       <header>
         <h1 className="title">
           <span className="double-color">welcome</span>
